@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App - Get error Suggestions</title>
+</head>
+
+<body>
+<form method="POST">
+Customs Error Message: <br>
+<input name="error_message" value="{{ request.form['error_message'] }}"> 
+<input type="submit" color='green'>
+</form>
+<br/>
+Suggested Solution: <br>
+<textarea name="textbox">{{result}}</textarea>
+
+</body>
+</html>
